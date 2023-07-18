@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*navbar*/
+.navbar {
+    background-color: rgb(43, 111, 213);
+    font-family: "Lumanosimo", cursive;
+    width: 100%;
+}
+
+.navbar a {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*PORTADA*/
+.portada {
+    min-height: 600px;
+    min-width: 100vw;
+    background: url("img/games-portada.gif") no-repeat center center/cover;
+}
+
+.portada button {
+    transition: all .2s;
+    background-color: rgb(0, 128, 255);
+    scroll-behavior: smooth;
+}
+
+.portada button:hover {
+    background-color: coral;
+}
+
+.portada button a {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.portada button a:hover {
+    color: aliceblue;
+}
+
+.container {
+    background-color: rgb(246, 191, 118);
+    text-align: center;
+    border-radius: 2em;
+    border: 2px solid black;
+}
+
+.titulo {
+    justify-content: center;
+    align-items: center;
+    font-family: "Lumanosimo", cursive;
+    font-weight: bold;
+}
+.cantidad{
+    padding: 20px;
+    background-color: rgb(221, 162, 140);
+
+
+}
+.cantidad img{
+    min-height: 30px;
+    width: 25px;
+}
+.cantidad span {
+    display: block;
+    background-color: rgba(255, 51, 0, 0.857);
+    border-radius: 150px;
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: -40px 0 0 30px;
+}
+/*PRODUCTOS*/
+
+.listaproductos {
+    background: linear-gradient(130deg, blue, red, green);
+    width: 100%;
+}
+.container{
+    margin: 20px;
+}
+.prod-articulos{
+    padding: 20px;
+}
+
+
+input {
+    width: 80%;
+    padding: 12px;
+    font-size: 34px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.btn {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid blue;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    transition: all .2s;
+}
+
+.btn:hover {
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+    background-color: chocolate;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: auto;
+}
+
+.producto {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 10px;
+    background:linear-gradient(145deg,rgb(14, 172, 14),rgba(221, 142, 142, 0.673));
+    justify-content: center;
+    align-content: center;
+    transition: all .3s;
+}
+
+.producto .precio {
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: rgb(11, 129, 78);
+    display: inline-block;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.producto .imagen {
+    display: flex;
+    justify-content: center;
+    min-height: 160px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.producto .imagen img {
+    padding: 10px;
+    border-radius: 1em;
+    max-height: 100px;
+}
+
+.btnComprar {
+    margin-top: 30px;
+}
+
+.producto:hover {
+    border: 1px solid black;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+.oculto {
+    display: none;
+}
+
+.info {
+    border-radius: 10px;
+}
+#categorias {
+    padding-bottom: 20px;
+}
+
+#categorias li {
+    list-style: none;
+    display: inline-block;
+}
+
+#categorias li .btn {
+    display: inline-block;
+}
+
+#categorias li .btn:hover,
+#categorias li .btn.seleccionado {
+    background-color: rgb(109, 164, 228);
+    transition: background-color 0.4s;
+}
+
+@media screen and(max-width:762px) {
+    #productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        height: auto;
+    }
+}

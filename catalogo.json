@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "nombre":"Twisted Metal 1",
+        "precio":100,
+        "categoria":"Videojuegos",
+        "imagen":"Twisted-1.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Twisted Metal 2",
+        "precio":200,
+        "categoria":"Videojuegos",
+        "imagen":"Twisted-2.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Twisted Metal 3",
+        "precio":300,
+        "categoria":"Videojuegos",
+        "imagen":"Twisted-3.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"GrantefAuto 5",
+        "precio":500,
+        "categoria":"Videojuegos",
+        "imagen":"grand-tef-auto.jpeg"
+    },
+    {
+        "id":5,
+        "nombre":"Mouse Gamer",
+        "precio":250,
+        "categoria":"Accesorios",
+        "imagen":"mouse.jpg"
+    },
+    {
+        "id":6,
+        "nombre":"Teclado",
+        "precio":120,
+        "categoria":"Accesorios",
+        "imagen":"teclado.jpg"
+    },
+    {
+        "id":7,
+        "nombre":"Audifono",
+        "precio":350,
+        "categoria":"Accesorios",
+        "imagen":"audifono.jpg"
+    },
+    {
+        "id":8,
+        "nombre":"USB",
+        "precio":50,
+        "categoria":"Accesorios",
+        "imagen":"usb.jpg"
+    }
+]
